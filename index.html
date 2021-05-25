@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./acount/account.css">
+    <link href="/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+</head>
+
+<body>
+    <!-- taskbar -->
+    <div>
+        <div class="taskbar">
+            <ul>
+                <li class="item"><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li class="item"><a href="#"><i class="fa fa-newspaper"></i>News</a></li>
+                <li class="item"><a href="#"><i class="fa fa-users"></i>Our Business</a></li>
+                <li class="item"><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+                <li class="item" id="rootItem"><a href="#">Course <span class="arrow_down"></span> </a>
+                    <ul class="dropdown" id="display">
+                        <li class="item"><a href="#"><i class="fab fa-java"></i>Java</a></li>
+                        <li class="item"><a href="#"><i class="fab fa-python"></i>Python</a></li>
+                        <li class="item"><a href="#"><i class="fab fa-js-square"></i>Javascript</a></li>    
+                        <li class="item"><a href="#"><i class="fa fa-atom"></i>ReactJs</a></li>
+                        <li class="item"><a href="#"><i class="fa fa-leaf"></i>Spring</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="#">Marketing</a></li>
+                <li class="item"><a href="#">About us</a></li>
+                <li onclick="showAccount()" class="login"><a href="#">Sign in</a> </li>
+            </ul>
+        </div>
+        <div class="nav-mobile">
+            <div class="hover-website"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+    <!-- end taskbar -->
+    <!-- login -->
+    <div style="display: none;" class="sign-in-account" id="accountUser">
+        <div style="position: absolute; right:0; top: 50px;" class="container">
+            <div class="alert">
+                <p><span class="account span">Account </span><i id="fa" class="fa fa-times" aria-hidden="true"></i></p>
+                <hr>
+                <span class="user span"><img src="./acount/Avatar.jpg" alt style="border-radius: 50%; width: 50px; height: 50px;"><span class="user-email span"></span></span>
+                <span class="addNewAccount">Add another account</span>
+                <hr>
+                <span class="profile span">Profile and visibility</span>
+                <span class="activity span">Activity</span>
+                <span class="cards span">Cards</span>
+                <span class="setting span">Setting</span>
+                <hr>
+                <span class="held span">Help</span>
+                <span class="shortcuts span">Shortcuts</span>
+                <hr>
+                <span class="span">Log out</span>
+            </div>
+        </div>
+    </div>
+    <!-- end login -->
+    <!-- slide show -->
+    <div class="slide-component">
+        <div class="slideshow-container">
+            <div class="slide">
+                <div class="mySlides fade">
+                    <div class="textNumber">1/3</div>
+                    <img src="/image/img_mountains_wide.jpg" alt="">
+                    <div class="text">Caption</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="textNumber">2/3</div>
+                    <img src="/image/img_nature_wide.jpg" alt="">
+                    <div class="text">Caption</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="textNumber">3/3</div>
+                    <img src="/image/img_snow_wide.jpg" alt="">
+                    <div class="text">Caption</div>
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- the a khong co href thi no khong chuyen trang 
+                    hieu ung ngay tai do, load du lieu cua phan tu do thoi
+                 -->
+            <br>
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+    <!-- end slide show -->
+    <!-- About us -->
+    <div class="main">
+        <div style="margin-top: 100px;" class="about-us-component ">
+            <div class="caption-about-us">
+                <div class="underline"><span></span></div>
+                <div class="name-about-us">About Us</div>
+            </div>
+            <div class="info-about-us ">
+                <div class=" column col-4">
+                    <div class="left">
+                        <div class="fullname">Fullname:</div>
+                        <div class="address">Address:</div>
+                        <div class="email">Email:</div>
+                        <div class="skill">Skill:</div>
+                        <div class="project">Mini project: </div>
+                    </div>
+                    <div class="right">
+                        <div class="fullname">Tran Quang Vinh</div>
+                        <div class="address">Ha Noi, Viet Nam</div>
+                        <div class="email">tranquangvinh17112k@gmail.com</div>
+                        <div class="skill">Java, Javascript, HTML, CSS, Bootstrap</div>
+                        <div class="name-project">
+                            <ul>
+                                <li>Calculator <i class="fas fa-calculator"></i></li>
+                                <li>TodoList <i class="fas fa-tasks"></i></li>
+                                <li>Stop watch <i class="far fa-clock"></i></li>
+                                <li>Student management <i class="fas fa-database"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" column col-9"><img src="/acount/Avatar.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!-- end about us -->
+    <!-- News -->
+    <div class="main">
+        <div class="about-us-component">
+            <div class="caption-about-us">
+                <div class="underline"><span></span></div>
+                <div class="name-about-us">Course</div>
+            </div>
+            <div class="info-about-us flex-course">
+                <div class="new new1">
+                    <img src="/image/java.png" alt="">
+                    <div class="buy">
+                        <div class="title">Java Course</div>
+                        <button class="buy-course">Buy</button>
+                    </div>
+                </div>
+                <div class="new new2">
+                    <img src="/image/python.jpg" alt="">
+                    <div class="buy">
+                        <div class="title">Python Course</div>
+                        <button class="buy-course">Buy</button>
+                    </div>
+                </div>
+                <div class="new new3">
+                    <img src="/image/javascript.jpg" alt="">
+                    <div class="buy">
+                        <div class="title">Javascipt Course</div>
+                        <button class="buy-course">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end news -->
+    <!-- contact -->
+    <div class="contact">
+        <div class="contact-component">
+            <div class="toggle-contact">
+                <div class="underline"><span></span></div>
+                <div class="contact-title">Contact</div>
+            </div>
+            <div class="left">
+                <div class="left-component">
+                    <div>
+                        <h2>We will connect you with the revelant person in charge. Please click "send button" affter providing your registering input.</h2>
+                    </div>
+                    <div class="input-info">
+                        <input type="text" class="name" placeholder="input your name">
+                        <input type="text" class="name" placeholder="input your email">
+                        <input type="text" class="name" placeholder="input your phone">
+                    </div>
+                    <div class="textarea-info">
+                        <textarea style="width: 99%; min-height: 200px;" name="" id="textarea-component"></textarea>
+                    </div>
+                    <div class="submit"><button>Submit</button></div>
+                </div>
+            </div>
+            <div class="right"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7450.73426341045!2d105.79136875806591!3d20.977915582929054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIGLGsHUgY2jDrW5oIHZp4buFbiB0aMO0bmcgUHRpdA!5e0!3m2!1svi!2s!4v1617979749998!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        </div>
+    </div>
+    <!-- end contact -->
+    <!-- banner -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="footer address">
+                    <div class="web">
+                        <h4>Pro Engineer</h4>
+                        <div>Add: No 45C, 250 Hoang Quoc Viet street Cau Giay - Ha Noi - Viet Nam</div>
+                        <div>TEL:(+84)-989-412-665</div>
+                        <div>Email:tranquangvinh17112k@gmail.com</div>
+                    </div>
+                </div>
+                <div class="footer address">
+                    <div class="categories">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href=""><i class="fas fa-home"></i>Home</a></li>
+                            <li><a href=""><i class="fas fa-newspaper"></i>News</a></li>
+                            <li><a href=""><i class="fas fa-users"></i>Our business</a></li>
+                            <li><a href=""><i class="fas fa-phone"></i>Contact</a></li>
+                            <li><a href=""><i class=""></i>About us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer address">
+                    <div class="language">
+                        <h4>Language</h4>
+                        <ul>
+                            <li><a href=""><i class="fas fa-language"></i>English</a></li>
+                            <li><a href=""><i class="fas fa-language"></i>Japanese</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer address">
+                    <div class="email">Email</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="./acount/account.js"></script>.
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function() {
+        $('.hover-website').click(function() {
+            $('.taskbar').toggleClass('visible');
+        });
+    });
+</script>

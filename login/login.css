@@ -1,0 +1,182 @@
+/* html,
+body {
+    background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.container {
+    height: 100%;
+    align-content: center;
+}
+
+.card {
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.social_icon span {
+    font-size: 60px;
+    margin-left: 10px;
+    color: #FFC312;
+}
+
+.social_icon span:hover {
+    color: rgb(73, 173, 180);
+    cursor: pointer;
+}
+
+.card-header h3 {
+    color: white;
+}
+
+.social_icon {
+    position: absolute;
+    right: 20px;
+    top: -45px;
+}
+
+.input-group-prepend span {
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border: 0 !important;
+}
+
+input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+}
+
+.remember {
+    color: white;
+}
+
+.remember input {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.login_btn {
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+}
+
+.login_btn:hover {
+    color: black;
+    background-color: rgb(73, 175, 182);
+}
+
+.links {
+    color: white;
+}
+
+.links a {
+    margin-left: 4px;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile {
+    margin-bottom: 20px;
+    font-size: 40px;
+    margin-top: -40px;
+}
+
+.container {
+    margin-top: 100px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.container .form .box {
+    width: 80%;
+    margin-bottom: 20px;
+    border: 2px solid #DFE1E6;
+    line-height: 30px;
+    background: #FAFBFC;
+    border-radius: 3px;
+}
+
+
+/* class khong style duoc outline */
+
+input {
+    outline-color: rgb(0, 195, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+button {
+    outline: none;
+}
+
+button>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .form .btn {
+    width: 82%;
+    margin-bottom: 10px;
+    line-height: 40px;
+    background: #FAFBFC;
+    border: none;
+    background: #fff;
+    color: rgb(21, 22, 21);
+    font-size: 15px;
+}
+
+.container .form .btn-green {
+    background: #5AAC44;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.container .form .btn-green:hover {
+    background-color: #6fbb5a;
+}
+
+button {
+    color: #505F79;
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.container .form a {
+    text-decoration: none;
+    color: #58c1d3;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.container .form a:hover {
+    text-decoration: underline;
+    color: rgb(65, 162, 201);
+}
